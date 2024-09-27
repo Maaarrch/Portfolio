@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Marcio">
+    <meta name="description" content="projeto portfolio marcio">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="images/pp.png">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+     
+     
+
+     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+     
+     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+     
+     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+     
+     <link rel="stylesheet" href="css/magnific-popup.css">
+     
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="css/style-main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <style>
+    /* Profile Section */
+
+
+/*-------------------------------------------------------*/
+#profile {
+	background:#cf455c;
+	background-image: url(images/header-shadow.png);
+	background-position: center bottom;
+	background-repeat: repeat-x;
+	overflow: hidden;
+}
+
+/* About */
+.about {
+	float: left;
+	margin-top: 30px;
+	width: 490px;
+	margin-left: 20px;
+}
+
+.about .photo-inner {
+    float: left;
+    background: url(images/photo-inner.png) no-repeat;
+    width: 214px;
+    height: 212px;
+    padding: 12px 0 0 19px;
+}
+
+.about .photo-inner img {
+	background-color: #FFF;
+}
+
+.about h1 {
+	font-weight: 900;
+	color: #FFF;
+	line-height: 34px;
+	margin-top: 8px;
+}
+
+.about h3 {
+	margin-top: 5px;
+	font-size: 18px;
+	color: #FFF;
+	line-height: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+      h3.main-heading .now{
+            background: #cf455c !important;
+        }
+
+.about p {
+	font-size: 14px;
+	margin-top: 15px;
+	color:#fff;
+	font-weight: 400;
+	line-height: 24px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Personal info */
+.personal-info {
+    float: left;
+    margin-top: 30px;
+    width: 310px;
+    min-height: 230px;
+    margin-left: 10px;
+    background: url(images/personal-info-sep.png) no-repeat left top;
+    padding: 20px 0 19px 20px;
+}
+span.word-wrap a {
+    color: #fff;
+}
+.personal-info li {
+    line-height: 12px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    float: left;
+    width: 293px;
+}
+
+.personal-info li label {
+	color:#fff;
+	float: left;
+	padding: 4px 7px;
+	font-weight: 550;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.personal-info li span {
+	float: right;
+	width: 220px;
+	padding-top: 4px;
+	font-weight: 400;
+	color:#fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+}
+        
+        
+        /* Resume Section */
+
+/*-------------------------------------------------------*/
+#resume {
+    padding: 0px 0px;
+    overflow: hidden;
+}
+
+.skills-section, .timeline-section {
+	float: left;
+}
+
+/* Timeline Section */
+.timeline-section {
+    width: 100%;
+}
+
+.timeline {
+	margin-bottom: 30px;
+}
+
+.timeline li {
+	margin-bottom: 20px;
+}
+
+.timeline li .timelineUnit {
+	line-height: 17px;
+	margin-left: 0px;
+	color: #444;
+	font-size: 13px;
+	border-left: 1px solid #cf455c;
+	padding-left: 15px;
+}
+
+.timeline li .timelineUnit .timelineDate {
+	line-height: 17px;
+	color:#cf455c;
+	font-size: 14px;
+	margin-left: 10px;
+	font-weight: normal;
+	padding: 2px 6px;
+	float: right;
+}
+
+.timeline li .timelineUnit h4 {
+	line-height: 24px;
+	font-size: 15px;
+	color: #444;
+     
+}
+
+.timeline li .timelineUnit h5 {
+	line-height: 18px;
+	font-size: 13px;
+	color: #999;
+}
+
+.timeline li .timelineUnit p {
+	color: #666;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+/* Skills Section */
+.skills-section {
+	width: 270px;
+}
+
+.skills {
+	margin-bottom: 25px;
+	overflow: hidden;
+}
+
+.skills li {
+	margin-bottom: 15px;
+	float: left;
+	padding-left: 0px;
+}
+
+.skills li h4 {
+	width: 140px;
+	float: left;
+	font-size: 15px;
+	color: #444;
+}
+
+.skills li .rating {
+	width: 123px;
+	height: 14px;
+	float: left;
+}
+
+.skills li .rating > span {
+	opacity: 0.3;
+	height: 12px;
+	width: 12px;
+	background-color: #cf455c;
+	display: block;
+	float: left;
+	margin-right: 1px;
+	border: 2px solid #eeeeee;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+/* Download Button */
+#resume .button {
+	width: 250px;
+	padding: 10px;
+	background-color: #cf455c;
+	overflow: hidden;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 20px;
+	margin: 20px 0px 0px -20px;
+	color: #fff;
+	display: block;
+	text-align: center;
+	-webkit-border-radius: 0px 4px 4px 0px;
+	-moz-border-radius: 0px 4px 4px 0px;
+	border-radius: 0px 4px 4px 0px;
+}
+
+#resume .button:hover {
+	background-color:#cf455c;
+}
+
+        
+        
+        
+     /* Portfolio Section */
+
+/*-------------------------------------------------------*/
+.row > .column {
+  padding: 0 8px;
+}
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    width: 572px;
+    max-width: 100%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+.close {
+    opacity: .7;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff!important;
+}
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Modal Content */
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* próximo & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#portfolio {
+	padding: 20px 20px 20px 20px;
+}
+
+/* Images list */
+#portfolio-list {
+	width: 820px;
+	overflow: hidden;
+}
+
+#portfolio-list li {
+	float: left;
+	margin-right: 25px;
+	text-align: center;
+	background-color: #fbfbfb;
+	border-bottom: 1px solid #e5e5e5;
+	height: 185px;
+	margin-bottom: 30px;
+	width: 180px;
+}
+
+#portfolio-list li:hover {
+	border-bottom: 1px solid #cf455c;
+	height: 185px;
+}
+
+#portfolio-list img {
+	background-color: #FFF;
+	height: 120px;
+	width: 180px;
+}
+
+#portfolio-list li:hover .title {
+	color:#cf455c;
+}
+
+#portfolio-list li .title {
+	font-size: 14px;
+	margin-top: 15px;
+	font-weight: 400;
+	color: #3A3A3A;
+}
+
+#portfolio-list li .categorie {
+	font-size: 11px;
+	line-height: 25px;
+	color: #999;
+}
+
+/* Filter menu */
+.cats-filter {
+	border-bottom: 1px solid #ededed;
+	overflow: hidden;
+	padding: 15px 0;
+}
+
+.cats-filter li a {
+	float: left;
+	margin-right: 7px;
+	color: #fff;
+	background-color: #666;
+	padding: 10px 10px;
+	margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: 'Roboto Condensed', sans-serif;
+     
+    border-radius: 50px;
+}
+
+.cats-filter li a:hover {
+	background-color:#cf455c;
+    text-decoration: none;
+}
+
+.cats-filter li a.current {
+	background-color:#cf455c;
+}
+
+/*-------------------------------------------------------*/   
+        
+        
+        
+        
+       /* Contact Section */
+
+/*-------------------------------------------------------*/
+#contact {	 
+	overflow: hidden;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.contact-info, .contact-form {
+	float: left;
+	padding: 0 20px;
+}
+
+.contact-info {
+	width: 250px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.contact-form {
+	width: 530px;
+}
+
+/* Contact info */
+.contact-info ul {
+	float: left;
+	border-left: 1px solid #cf455c;
+	padding-left: 18px;
+    
+}
+
+.contact-info ul li {
+	font-size: 13px;
+	line-height: 20px;
+	color: #666;
+	overflow: hidden;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Google map */
+#map {
+    height: 300px;
+    margin-bottom: 25px;
+    width: 100%;
+    border-bottom: 1px solid #CCC;
+    border-top: 1px solid #CCC;
+	width:100%;
+}
+#map iframe {
+    width: 100%;
+}
+/*-------------------------------------------------------*/
+
+/* Forms */
+
+/*-------------------------------------------------------*/
+form .input, form textarea {
+    
+    /* -webkit-box-shadow: inset 0 5px 16px -13px #333; */
+    /* box-shadow: inset 0 5px 16px -13px #333; */
+    background-color: #FDFDFD;
+    border: 1px solid #ced4da;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    color: #666;
+    font-size: 12px;
+    height: 30px;
+    outline: none;
+    padding: 6px 10px;
+    resize: none;
+    width: 96%;
+}
+
+form textarea {
+	height: 112px;
+	line-height: 18px;
+	margin-bottom: 0;
+	padding-top: 8px;
+}
+
+form p {
+	margin-bottom: 15px;
+}
+
+form p label {
+	display: block;
+	color: #999;
+	margin-bottom: 8px;
+	font-size: 13px;
+}
+
+.button {
+	color: #fff;
+	background-color: #cf455c;
+	padding: 8px;
+	border: none;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	cursor: pointer;
+	font-size: 13px;
+}
+
+.button:hover {
+	background-color:#cf455c;
+}
+
+/*-------------------------------------------------------*/
+ 
+        
+        
+        
+        
+        
+        
+        
+        
+        footer{
+         font-family: 'Roboto Condensed', sans-serif;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+/*-------------------------------------------------------*/
+    </style>
+</head>
+<body>
+ <br><br>
+  <section id="container">
+
+   <header> 
+    	<div id="logo">
+        	<h2>Saudações!</h2>
+                        
+        </div>
+        
+    </header>
+    <section id="content">
+    <div id="profile"> 
+        	<div class="about">
+            	<div class="photo-inner">
+                    <ul>
+                        <li><img src="images/photo.jpg" height="186" width="153" /></li>
+                        <li><img src="images/photo1.png" height="186" width="153" /></li>
+                    </ul>
+                </div>
+                <h1>MARCIO ANTONIO MARCHETTI</h1>
+                <h3>DESIGNER & DESENVOLVEDOR FRONT-END</h3>  
+                             
+                <p>&emsp;Gosto de criar artes e montagens lúdicas. <br>Sinta-se à vontade para dar uma olhada nos &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; recentes projetos.</p>
+                  <br>
+            </div>
+        	<ul class="personal-info">
+            <li><label>Email</label><span class="word-wrap">jason29@outlook.com.br</span></li>
+            <li><label>Linkedin</label><span class="word-wrap"><a href="https://www.linkedin.com/in/marcioamarchetti/">marcioamarchetti</a></span></li>
+                <li><label>Telefone</label><span>(11) 97555-5043</span></li>
+                
+                
+				<li><label>Github</label><span class="word-wrap"><a href="https://github.com/Maaarrch">Maaarrch</a></span></li>
+				<li><label>Behance</label><span class="word-wrap"><a href="https://www.behance.net/marchm">marchm</a></span></li>
+				
+                
+            </ul>
+        </div><!-- /Profile -->   
+         <nav class="menu">
+        	<ul class="tabs">
+                <li class="tmenu"><a href="#profile" class="tab-profile"><i><i class="fa fa-user" aria-hidden="true"></i></i>Perfil</a></li>
+                <li class="tmenu"><a href="#resume"><i><i class="fa fa-wpexplorer" aria-hidden="true"></i></i>Resumo</a></li>
+                <li class="tmenu"><a href="#portfolio"><i><i class="fa fa-eercast" aria-hidden="true"></i></i>Portfolio</a></li>
+                <li class="tmenu"><a href="#contact"><i><i class="fa fa-telegram" aria-hidden="true"></i></i>Contato</a></li>
+            </ul>
+        </nav>
+        <section id="resume">
+        	 <div class="timeline-section">
+                   <div class="main-wrapper-resume">
+      <!-- carttitle-wrapper start -->
+      
+      <div class="carttitle-wrapper">
+         <div class="color-box">
+		    <button id="red-color" class="btn-style"></button>
+            <button id="yellow-color" class="btn-style"></button>
+            <button id="blue-color" class="btn-style"></button>
+            <button id="green-color" class="btn-style"></button>
+			<button class="setting-icon "><i class="fa fa-cog fa-spin" aria-hidden="true"></i></button>
+         </div>
+         <div class="container no-padding">
+            <div class="row no-margin">
+               <div class="col-md-6 no-padding bg-color-left">
+                  <div class="left-name bg-color-1">
+                     <h2>Marcio Antonio<span class="text-color">Marchetti</span></h2>
+                     <h5>designer imaginativo</h5>
+                     <p>&emsp; Desenvolvedor Front-End, crio projetos visuais utilizando o Adobe Photoshop, Illustrator e Premiere. Trabalhando com web design desde 2016, formado em Design Gráfico, cursando Análise e Desenvolvimento de Sistemas, e estudando Back-end e PHP.</p>
+                  </div>
+                  <div class="left-address">
+                     <ul>
+                        <li><span class="text-color">Telefone</span>(11) 97555-5043</li>                        
+                        <li><span class="text-color">Behance</span><a href="https://www.behance.net/marchm">marchm</a></li>                                              
+                        <li><span class="text-color">EMAIL</span>jason29@outlook.com.br</li>
+                     </ul>
+                  </div>
+                  <div class="ex-heading loader">
+                     <h2>EXPERIÊNCIA</h2>
+                  </div>
+                  <div class="ex-box">
+                     <h3>OGEA</h3>
+                     <h2>02/2023 – 01/2024</h2>
+                     <h4>Técnico de Suporte</h4>
+                     <p>&emsp; 	Atendimento aos usuários de softwares instalados pela empresa, realizar rotina de manutenção preventiva em hardware, garantir integridade e a disponibilidade de dados.  </p>
+                     <p>&emsp; 	Efetuar testes funcionais, patches de segurança, troca de peças, acompanhar o desempenho de equipamentos, computadores, servidores, sistemas operacionais e programas de software. </p>
+                     <p>&emsp; 	Prestação de suporte técnico para instalação, configuração, otimização, atualização e conserto de máquinas  (notebook, desktop, impressora) e periféricos. </p>
+                  </div>
+                  <div class="ex-box">
+                     <h3>GR CONTROL</h3>
+                     <h2>08/2017 – 06/2018</h2>
+                     <h4>Designer Digital</h4>
+                     <p>&emsp; Responsável pela captura, criação, e edição de vídeos, imagens, anúncios, banners, conteúdo digital para redes sociais e marketplace.</p>
+                     <p>&emsp; 	Realizar o acompanhamento de perguntas e preferências dos clientes, testes de usabilidade nas máquinas, e indicadores de qualidade.</p>
+                  </div>
+                  
+                  
+               </div>
+               <div class="col-md-6 no-padding bg-color-right">
+                  <div class="top-skills">
+                     
+                     
+                     
+                     
+                  </div>
+                  <div class="right-skills">
+                     <div class="row no-margin">
+                        <div class="col-md-12 heading-skills no-padding">
+                           <h3>Habilidades</h3>
+                        </div>
+                     </div>
+                     <div class="row no-margin">
+                        <div class="col-md-5 no-padding">
+                           <h4>Photoshop</h4>
+                        </div>
+                        <div class="col-md-7 no-padding">
+                           <div class="progress">
+                              <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row no-margin">
+                        <div class="col-md-5 no-padding">
+                           <h4>Premiere</h4>
+                        </div>
+                        <div class="col-md-7 no-padding">
+                           <div class="progress">
+                              <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row no-margin">
+                        <div class="col-md-5 no-padding">
+                           <h4>Illustrator</h4>
+                        </div>
+                        <div class="col-md-7 no-padding">
+                           <div class="progress">
+                              <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row no-margin">
+                        <div class="col-md-5 no-padding">
+                           <h4>Visual Studio Code</h4>
+                        </div>
+                        <div class="col-md-7 no-padding">
+                           <div class="progress">
+                              <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row no-margin mt-25">
+                        <div class="col-md-5 no-padding">
+                           <h4>HTML</h4>
+                        </div>
+                        <div class="col-md-7 no-padding">
+                           <div class="progress">
+                              <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row no-margin">
+                        <div class="col-md-5 no-padding">
+                           <h4>CSS</h4>
+                        </div>
+                        <div class="col-md-7 no-padding">
+                           <div class="progress">
+                              <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row no-margin">
+                        <div class="col-md-5 no-padding">
+                           <h4>Javascript</h4>
+                        </div>
+                        <div class="col-md-7 no-padding">
+                           <div class="progress">
+                              <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row no-margin">
+                        <div class="col-md-5 no-padding">
+                           <h4>Python</h4>
+                        </div>
+                        <div class="col-md-7 no-padding">
+                           <div class="progress">
+                              <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 35%">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     
+                  </div>
+                  <div class="eduction-right">
+                     <div class="row no-margin">
+                        <div class="col-md-12 heading-skills no-padding">
+                           <h3>FORMAÇÃO</h3>
+                           <div class="ex-box">
+                              <h4>Serviço Nacional de Aprendizagem Comercial – SENAC</h4>
+                              <h2>2022-2024</h2>                              
+                              <p>Tecnólogo em Análise e Desenvolvimento de Sistemas</p>
+                           </div>
+                        </div>
+                        <div class="col-md-12 heading-skills no-padding">
+                           <div class="ex-box">
+                              <h4>Universidade Paulista - UNIP</h4>
+                              <h2>2019-2021</h2>                              
+                              <p>Tecnólogo em Design Gráfico</p>
+                           </div>
+                        </div>
+                        <div class="col-md-12 heading-skills no-padding">
+                           <div class="ex-box">
+                              <h4>Ensino Aplicação de Osasco</h4>
+                              <h2>2016-2017</h2>                              
+                              <p>Técnico em Tecnologia da Informação</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="address-qr-right">
+                     <div class="row no-margin">
+                        <div class="col-md-5 no-padding">
+                           <div class="qr-box">
+                              <img src="images/qr.png">
+                           </div>
+                        </div>
+                        <div class="col-md-7 no-padding">
+                           <div class="address-right-box">
+                              <ul>
+                                 <li>
+                                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                                    <p>(11) 97555-5043</p>
+                                 </li>
+                                 <li>
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                    <p>jason29@outlook.com.br</p>
+                                 </li>
+                                 
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+	  </div>
+        </section><!-- /Resume --> 
+        <section id="portfolio">
+             
+            <div class="extra-text">Trabalhos recentes</div>
+            <ul id="portfolio-list">
+                <li class="animation print">
+                    <a href="images/1.jpg" class="folio">
+                        <img src="images/1-thumb.jpg" alt="Image Title">
+                        <h2 class="title">Halloween 1978</h2>
+                       
+                    </a>
+					
+            	</li>
+               <li class="animation print">
+                  <a href="images/3.jpg" class="folio">
+                      <img src="images/2-thumb.jpg" alt="">                            
+                      <h2 class="title">Halloween 2018</h2>
+                     
+                  </a>
+             </li>
+                <li class="animation print">
+                    <a href="images/2.jpg" class="folio">
+                        <img src="images/3-thumb.jpg" alt="">
+                        <h2 class="title">Scanners</h2>
+                       
+                    </a>
+            	</li>                        
+                
+                <li class="animation2 print">
+                    <a href="images/4.jpg" class="folio">
+                        <img src="images/4-thumb.jpg" alt="">
+                        <h2 class="title">Vampire Kiss</h2>
+                        
+                    </a>
+            	</li>
+                <li class="illustration">
+                    <a href="images/5.jpg" class="folio">
+                        <img src="images/5-thumb.jpg" alt="">
+                        <h2 class="title">Cage</h2>
+                        
+                    </a>
+            	</li>
+                <li class="webdesign photoghraphy">
+                    <a href="images/anonovo1.jpg" class="folio">
+                        <img src="images/9-thumb.jpg" alt="">
+                        <h2 class="title">Guardianes</h2>
+                         
+                    </a>
+            	</li>
+                <li class="webdesign photoghraphy">
+                    <a href="images/7.jpg" class="folio">
+                        <img src="images/7-thumb.jpg" alt="">
+                        <h2 class="title">Nintendo Switch</h2>
+                        
+                    </a>
+            	</li>
+                <li class="photoghraphy illustration">
+                    <a href="images/8.jpg" class="folio">
+                        <img src="images/8-thumb.jpg" alt="">
+                        <h2 class="title">Revista Entretenir</h2>
+                        
+                    </a>
+            	</li>
+            </ul>
+        </section><!-- /Portfolio -->
+        <section id="contact">
+        	<div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467692.04890141165!2d-46.875499869998976!3d-23.681531440024322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-PT!2sbr!4v1664565846962!5m2!1spt-PT!2sbr" width="300" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+            
+            <div class="contact-form">
+                <h3 class="main-heading"><span>Vamos manter contanto</span></h3>
+                <div id="contact-status"></div>
+                <ul>
+                    
+                    <li>E-MAIL: <b>jason29@outlook.com.br</b> </li>
+                    <li>TELEFONE: <b>(11) 97555-5043</b></li>
+                                       <li>LINKEDIN: <a href="https://www.linkedin.com/in/marcioamarchetti/">marcioamarchetti</a> </li>
+                </ul>
+                <br><br><br><br>
+            </div>
+        </section><!-- /contact -->
+    </section><!-- /Content -->
+     <footer>
+    	<div class="copyright">Copyright &copy; 2024 March</div>
+    </footer>
+	<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  
+</div> 
+
+    </section>
+    
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.easytabs/3.2.0/jquery.easytabs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/1.5.25/jquery.isotope.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.caroufredsel/6.1.0/jquery.carouFredSel.packed.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+<script>
+    
+    $(document).ready(function() {
+  $("#portfolio").magnificPopup({
+      delegate: 'a',
+      type:'image',
+      gallery: {
+          enabled: true
+      }
+  });
+});
+    
+</script>
+</body>
+</html>
